@@ -78,10 +78,8 @@ public class WebCrawler extends TimerTask {
             for(Element el : elements.select("td")){
                 if (!el.text().equals("")){
                     System.out.println(el.text());
-
                 }
             }
-
         }
     }
 
