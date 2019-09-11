@@ -1,0 +1,55 @@
+[17:11:52][ERROR](Main.java:81)-Unrecognized option: -kafkaConf
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -kafkaConf
+	at org.apache.commons.cli.DefaultParser.handleUnknownToken(DefaultParser.java:360)
+	at org.apache.commons.cli.DefaultParser.handleConcatenatedOptions(DefaultParser.java:702)
+	at org.apache.commons.cli.DefaultParser.handleShortAndLongOption(DefaultParser.java:533)
+	at org.apache.commons.cli.DefaultParser.handleToken(DefaultParser.java:243)
+	at org.apache.commons.cli.DefaultParser.parse(DefaultParser.java:120)
+	at org.apache.commons.cli.DefaultParser.parse(DefaultParser.java:76)
+	at org.apache.commons.cli.DefaultParser.parse(DefaultParser.java:60)
+	at me.tykang.webCrawler.Main.parseCommandLine(Main.java:79)
+	at me.tykang.webCrawler.Main.main(Main.java:35)
+[17:16:21][ERROR](Main.java:81)-Unrecognized option: -kafkaConf
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -kafkaConf
+	at org.apache.commons.cli.DefaultParser.handleUnknownToken(DefaultParser.java:360)
+	at org.apache.commons.cli.DefaultParser.handleConcatenatedOptions(DefaultParser.java:702)
+	at org.apache.commons.cli.DefaultParser.handleShortAndLongOption(DefaultParser.java:533)
+	at org.apache.commons.cli.DefaultParser.handleToken(DefaultParser.java:243)
+	at org.apache.commons.cli.DefaultParser.parse(DefaultParser.java:120)
+	at org.apache.commons.cli.DefaultParser.parse(DefaultParser.java:76)
+	at org.apache.commons.cli.DefaultParser.parse(DefaultParser.java:60)
+	at me.tykang.webCrawler.Main.parseCommandLine(Main.java:79)
+	at me.tykang.webCrawler.Main.main(Main.java:35)
+[17:22:28][ERROR](Main.java:81)-Unrecognized option: -kafkaConf
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -kafkaConf
+	at org.apache.commons.cli.DefaultParser.handleUnknownToken(DefaultParser.java:360)
+	at org.apache.commons.cli.DefaultParser.handleConcatenatedOptions(DefaultParser.java:702)
+	at org.apache.commons.cli.DefaultParser.handleShortAndLongOption(DefaultParser.java:533)
+	at org.apache.commons.cli.DefaultParser.handleToken(DefaultParser.java:243)
+	at org.apache.commons.cli.DefaultParser.parse(DefaultParser.java:120)
+	at org.apache.commons.cli.DefaultParser.parse(DefaultParser.java:76)
+	at org.apache.commons.cli.DefaultParser.parse(DefaultParser.java:60)
+	at me.tykang.webCrawler.Main.parseCommandLine(Main.java:79)
+	at me.tykang.webCrawler.Main.main(Main.java:35)
+[17:23:20][ERROR](Main.java:81)-Unrecognized option: -kafkaConf
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -kafkaConf
+	at org.apache.commons.cli.DefaultParser.handleUnknownToken(DefaultParser.java:360)
+	at org.apache.commons.cli.DefaultParser.handleConcatenatedOptions(DefaultParser.java:702)
+	at org.apache.commons.cli.DefaultParser.handleShortAndLongOption(DefaultParser.java:533)
+	at org.apache.commons.cli.DefaultParser.handleToken(DefaultParser.java:243)
+	at org.apache.commons.cli.DefaultParser.parse(DefaultParser.java:120)
+	at org.apache.commons.cli.DefaultParser.parse(DefaultParser.java:76)
+	at org.apache.commons.cli.DefaultParser.parse(DefaultParser.java:60)
+	at me.tykang.webCrawler.Main.parseCommandLine(Main.java:79)
+	at me.tykang.webCrawler.Main.main(Main.java:35)
+[17:24:31][ERROR](Main.java:81)-Unrecognized option: -kafkaConf
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -kafkaConf
+	at org.apache.commons.cli.DefaultParser.handleUnknownToken(DefaultParser.java:360)
+	at org.apache.commons.cli.DefaultParser.handleConcatenatedOptions(DefaultParser.java:702)
+	at org.apache.commons.cli.DefaultParser.handleShortAndLongOption(DefaultParser.java:533)
+	at org.apache.commons.cli.DefaultParser.handleToken(DefaultParser.java:243)
+	at org.apache.commons.cli.DefaultParser.parse(DefaultParser.java:120)
+	at org.apache.commons.cli.DefaultParser.parse(DefaultParser.java:76)
+	at org.apache.commons.cli.DefaultParser.parse(DefaultParser.java:60)
+	at me.tykang.webCrawler.Main.parseCommandLine(Main.java:79)
+	at me.tykang.webCrawler.Main.main(Main.java:35)
