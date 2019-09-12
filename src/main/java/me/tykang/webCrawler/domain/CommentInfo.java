@@ -1,19 +1,22 @@
 package me.tykang.webCrawler.domain;
 
+import java.util.Date;
+
 public class CommentInfo {
 
-    private Double id;
+    private Long id;
     private Double score;
+    private String commentWithTitle;
     private String titile;
     private String comment;
     private String writer;
-    private String commentDate;
+    private Date commentDate;
 
-    public Double getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Double id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -23,6 +26,14 @@ public class CommentInfo {
 
     public void setScore(Double score) {
         this.score = score;
+    }
+
+    public String getCommentWithTitle() {
+        return commentWithTitle;
+    }
+
+    public void setCommentWithTitle(String commentWithTitle) {
+        this.commentWithTitle = commentWithTitle;
     }
 
     public String getTitile() {
@@ -49,11 +60,11 @@ public class CommentInfo {
         this.writer = writer;
     }
 
-    public String getCommentDate() {
+    public Date getCommentDate() {
         return commentDate;
     }
 
-    public void setCommentDate(String commentDate) {
+    public void setCommentDate(Date commentDate) {
         this.commentDate = commentDate;
     }
 }

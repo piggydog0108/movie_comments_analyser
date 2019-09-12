@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a86c55e-0250-4d3a-9768-a341980016b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/MovieListCrawler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/domain/CommentInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/domain/MovieInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/logfile-webCrawler.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logfile-webCrawler.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/MovieListCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/MovieListCrawler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/WebCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/WebCrawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/domain/CommentInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/domain/CommentInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/domain/MovieInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/domain/MovieInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/me/tykang/webCrawler/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/tykang/webCrawler/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/me/tykang/webCrawler/WebCrawler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/tykang/webCrawler/WebCrawler.class" afterDir="false" />
     </list>
@@ -29,17 +29,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+            <state relative-caret-position="444">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="185">
+              <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/MovieListCrawler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+            <state relative-caret-position="151">
+              <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#290#291#0" expanded="true" />
@@ -61,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/WebCrawler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+            <state relative-caret-position="404">
+              <caret line="126" column="17" lean-forward="true" selection-start-line="126" selection-start-column="17" selection-end-line="126" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,54 +74,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/domain/MovieInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/domain/CommentInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="900">
+              <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
               <folding>
-                <element signature="e#257#258#0" expanded="true" />
-                <element signature="e#282#283#0" expanded="true" />
-                <element signature="e#318#319#0" expanded="true" />
-                <element signature="e#346#347#0" expanded="true" />
-                <element signature="e#378#379#0" expanded="true" />
-                <element signature="e#406#407#0" expanded="true" />
-                <element signature="e#448#449#0" expanded="true" />
-                <element signature="e#482#483#0" expanded="true" />
-                <element signature="e#515#516#0" expanded="true" />
-                <element signature="e#544#545#0" expanded="true" />
-                <element signature="e#588#589#0" expanded="true" />
-                <element signature="e#624#625#0" expanded="true" />
-                <element signature="e#658#659#0" expanded="true" />
-                <element signature="e#688#689#0" expanded="true" />
-                <element signature="e#734#735#0" expanded="true" />
-                <element signature="e#772#773#0" expanded="true" />
-                <element signature="e#805#806#0" expanded="true" />
-                <element signature="e#834#835#0" expanded="true" />
+                <element signature="e#311#312#0" expanded="true" />
+                <element signature="e#336#337#0" expanded="true" />
+                <element signature="e#370#371#0" expanded="true" />
+                <element signature="e#398#399#0" expanded="true" />
+                <element signature="e#430#431#0" expanded="true" />
+                <element signature="e#458#459#0" expanded="true" />
+                <element signature="e#500#501#0" expanded="true" />
+                <element signature="e#534#535#0" expanded="true" />
+                <element signature="e#577#578#0" expanded="true" />
+                <element signature="e#616#617#0" expanded="true" />
+                <element signature="e#680#681#0" expanded="true" />
+                <element signature="e#736#737#0" expanded="true" />
+                <element signature="e#769#770#0" expanded="true" />
+                <element signature="e#798#799#0" expanded="true" />
+                <element signature="e#842#843#0" expanded="true" />
                 <element signature="e#878#879#0" expanded="true" />
-                <element signature="e#914#915#0" expanded="true" />
-                <element signature="e#952#953#0" expanded="true" />
-                <element signature="e#986#987#0" expanded="true" />
-                <element signature="e#1040#1041#0" expanded="true" />
-                <element signature="e#1086#1087#0" expanded="true" />
+                <element signature="e#912#913#0" expanded="true" />
+                <element signature="e#942#943#0" expanded="true" />
+                <element signature="e#988#989#0" expanded="true" />
+                <element signature="e#1026#1027#0" expanded="true" />
+                <element signature="e#1059#1060#0" expanded="true" />
+                <element signature="e#1088#1089#0" expanded="true" />
+                <element signature="e#1132#1133#0" expanded="true" />
+                <element signature="e#1168#1169#0" expanded="true" />
+                <element signature="e#1204#1205#0" expanded="true" />
+                <element signature="e#1238#1239#0" expanded="true" />
+                <element signature="e#1290#1291#0" expanded="true" />
+                <element signature="e#1336#1337#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -149,14 +135,14 @@
         <option value="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/webCrawler.java" />
         <option value="$PROJECT_DIR$/src/main/resources/producer.properties" />
         <option value="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/configurations/Options.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/domain/Comment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/domain/CommentInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/WebCrawler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/MovieListCrawler.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/domain/MovieInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/domain/CommentInfo.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/MovieListCrawler.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/WebCrawler.java" />
       </list>
     </option>
   </component>
@@ -245,104 +231,19 @@
               <item name="tykang" type="b2602c69:ProjectViewProjectNode" />
               <item name="webCrawler" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tykang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tykang" type="b2602c69:ProjectViewProjectNode" />
               <item name="webCrawler" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tykang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="tykang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="tykang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tykang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tykang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tykang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: commons-cli:commons-cli:1.4" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="tykang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: commons-cli:commons-cli:1.4" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-cli-1.4.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tykang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: commons-cli:commons-cli:1.4" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-cli-1.4.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="cli" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tykang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: log4j:log4j:1.2.17" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="tykang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: log4j:log4j:1.2.17" type="70bed36:NamedLibraryElementNode" />
-              <item name="log4j-1.2.17.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tykang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: log4j:log4j:1.2.17" type="70bed36:NamedLibraryElementNode" />
-              <item name="log4j-1.2.17.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="log4j" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tykang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.jsoup:jsoup:1.11.3" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="tykang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.jsoup:jsoup:1.11.3" type="70bed36:NamedLibraryElementNode" />
-              <item name="jsoup-1.11.3.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tykang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.jsoup:jsoup:1.11.3" type="70bed36:NamedLibraryElementNode" />
-              <item name="jsoup-1.11.3.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="jsoup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tykang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.jsoup:jsoup:1.11.3" type="70bed36:NamedLibraryElementNode" />
-              <item name="jsoup-1.11.3.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="jsoup" type="462c0819:PsiDirectoryNode" />
-              <item name="nodes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -408,7 +309,7 @@
     <frame x="0" y="23" width="1440" height="822" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -418,7 +319,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.42054793" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4630137" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.23561645" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -440,10 +341,16 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/WebCrawler.java</url>
-          <line>77</line>
+          <url>file://$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/Main.java</url>
+          <line>73</line>
           <properties />
-          <option name="timeStamp" value="14" />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/Main.java</url>
+          <line>71</line>
+          <properties />
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -499,20 +406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/logfile-webCrawler.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/domain/Comment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -520,53 +413,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logs/logfile-webCrawler.log.2019-09-06">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/domain/MovieInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#174#175#0" expanded="true" />
+            <element signature="e#202#203#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#446#447#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/logfile-webCrawler.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/domain/CommentInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="900">
+          <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
           <folding>
-            <element signature="e#257#258#0" expanded="true" />
-            <element signature="e#282#283#0" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#448#449#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#805#806#0" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
             <element signature="e#878#879#0" expanded="true" />
-            <element signature="e#914#915#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
-            <element signature="e#1040#1041#0" expanded="true" />
-            <element signature="e#1086#1087#0" expanded="true" />
+            <element signature="e#912#913#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1132#1133#0" expanded="true" />
+            <element signature="e#1168#1169#0" expanded="true" />
+            <element signature="e#1204#1205#0" expanded="true" />
+            <element signature="e#1238#1239#0" expanded="true" />
+            <element signature="e#1290#1291#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/MovieListCrawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+        <state relative-caret-position="151">
+          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#290#291#0" expanded="true" />
@@ -575,27 +503,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/WebCrawler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+        <state relative-caret-position="185">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/domain/MovieInfo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/WebCrawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tykang/webCrawler/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="404">
+          <caret line="126" column="17" lean-forward="true" selection-start-line="126" selection-start-column="17" selection-end-line="126" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

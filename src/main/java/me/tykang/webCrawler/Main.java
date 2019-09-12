@@ -3,9 +3,12 @@ package me.tykang.webCrawler;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Properties;
 import java.util.Timer;
 
+import me.tykang.webCrawler.domain.CommentInfo;
+import me.tykang.webCrawler.domain.MovieInfo;
 import org.apache.commons.cli.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,6 +24,7 @@ public class Main {
     private static final String LOG_PATH = "log4jConf";
     private static final String LAST_PAGE_NUMBER="lastPageNumber";
     private static final Options OPTIONS = new Options();
+    public static ArrayList<MovieInfo> MOVIE_INFO_LIST = null;
 
     public static void main(String[] args) {
 
@@ -57,14 +61,17 @@ public class Main {
         Integer lastPageNum=Integer.parseInt(lastPageNumber);
 
         MovieListCrawler movieListCrawler=new MovieListCrawler(movieListUrl);
-        movieListCrawler.getMovieList();
+        MOVIE_INFO_LIST=movieListCrawler.getMovieList();
 
-//        Timer timer = new Timer("Timer-thread", false);
-//        WebCrawler webCrawler=new WebCrawler(url, lastPageNum);
-//        timer.scheduleAtFixedRate(webCrawler,1000, 1000 * 60);
 
-//        WebCrawler webCrawler = new WebCrawler(url, lastPageNum);
-//        webCrawler.webCrawlering(url,lastPageNum);
+        Timer timer = new Timer("Timer-thread", false);
+        WebCrawler webCrawler=new WebCrawler(url, lastPageNum, MOVIE_INFO_LIST);
+        timer.scheduleAtFixedRate(webCrawler,1000, 1000 * 60);
+
+//        WebCrawler webCrawler = new WebCrawler(url, lastPageNum, MOVIE_INFO_LIST);
+//        ArrayList<CommentInfo> commentInfoList=webCrawler.webCrawlering();
+
+        System.out.println(" ");
 
     }
 
