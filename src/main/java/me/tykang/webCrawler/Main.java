@@ -64,12 +64,12 @@ public class Main {
         MOVIE_INFO_LIST=movieListCrawler.getMovieList();
 
 
-        Timer timer = new Timer("Timer-thread", false);
-        WebCrawler webCrawler=new WebCrawler(url, lastPageNum, MOVIE_INFO_LIST);
-        timer.scheduleAtFixedRate(webCrawler,1000, 1000 * 60);
+//        Timer timer = new Timer("Timer-thread", false);
+//        WebCrawler webCrawler=new WebCrawler(url, lastPageNum, MOVIE_INFO_LIST);
+//        timer.scheduleAtFixedRate(webCrawler,1000, 1000 * 60);
 
-//        WebCrawler webCrawler = new WebCrawler(url, lastPageNum, MOVIE_INFO_LIST);
-//        ArrayList<CommentInfo> commentInfoList=webCrawler.webCrawlering();
+        WebCrawler webCrawler = new WebCrawler(url, lastPageNum, MOVIE_INFO_LIST);
+        ArrayList<CommentInfo> commentInfoList=webCrawler.webCrawlering();
 
         System.out.println(" ");
 

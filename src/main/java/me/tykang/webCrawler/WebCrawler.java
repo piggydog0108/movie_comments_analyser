@@ -34,9 +34,9 @@ public class WebCrawler extends TimerTask {
     @Override
     public void run() {
         Document doc=null;
+        SimpleDateFormat dt=new SimpleDateFormat(TimeFormat);
 
-        log.debug("Thead id =" + Thread.currentThread().getId());
-
+        ArrayList<CommentInfo> commentInfoList=new ArrayList<>();
         for(int page=1; page<=LastNumber; page++){
 
             try {
@@ -45,27 +45,49 @@ public class WebCrawler extends TimerTask {
                 e.printStackTrace();
             }
 
-            Elements elements = doc.select("div.article");
+            Elements elements = doc.select("div.article").select("tr");
 
-            for(Element el : elements.select("tr")){
-                String commentId=el.select("td.ac num").text();
-                String titleAndComments=el.select("td.title").text();
-                titleAndComments=titleAndComments.replace(" 신고","").replace(":","");
+            int i=1;
+            CommentInfo commentInfo=new CommentInfo();
+            for(Element el : elements.select("td")){
 
-                String[] arrTitle=titleAndComments.split(" ");
-                String title=arrTitle[0];
-                String comments="";
-
-                for(int i=1; i<arrTitle.length; i++){
-                    comments+=arrTitle[i].concat(" ");
+                if (el.text().equals("")){
+                    continue;
                 }
 
-                String titleMasterData=el.select("td.num").text();
-                String[] arr=titleMasterData.split(" ");
-                String date=arr[arr.length-1];
-                if (!(date.equals("")&&title.equals("")&&comments.equals(""))) {
-                    System.out.println(commentId+" || "+date+" || " + title + " || "+ comments);
+                if(i%4==1){
+                    commentInfo.setId(Long.parseLong(el.text()));
+                }else if(i%4==2){
+                    commentInfo.setScore(Double.parseDouble(el.text()));
+                }else if(i%4==3) {
+                    for(MovieInfo movieInfo : MOVIE_INFO_LIST){
+                        if (el.text().contains(movieInfo.getTitle())){
+                            String comment= el.text();
+                            comment=comment.substring(movieInfo.getTitle().length(),el.text().indexOf("신고"));
+                            commentInfo.setTitile(movieInfo.getTitle());
+                            commentInfo.setComment(comment);
+//                            System.out.println(movieInfo.getTitle()+" | "+comment);
+
+                        }else{
+                            continue;
+                        }
+                    }
+                    commentInfo.setCommentWithTitle(el.text());
+                }else{
+                    String[] writerAndDate=el.text().split(" ");
+                    commentInfo.setWriter(writerAndDate[0]);
+                    Date commentDate=null;
+                    try {
+                        commentDate=dt.parse(writerAndDate[1]);
+                        commentInfo.setCommentDate(commentDate);
+                    } catch (ParseException e) {
+                        e.printStackTrace();
+                    }
+                    commentInfoList.add(commentInfo);
+                    commentInfo=new CommentInfo();
                 }
+
+                i++;
             }
         }
     }
