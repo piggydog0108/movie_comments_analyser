@@ -1,5 +1,8 @@
 package me.tykang.webCrawler;
 
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import me.tykang.webCrawler.domain.CommentInfo;
 import me.tykang.webCrawler.domain.MovieInfo;
 import org.jsoup.Jsoup;
@@ -10,7 +13,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -24,11 +26,13 @@ public class WebCrawler extends TimerTask {
     private Integer LastNumber;
     private ArrayList<MovieInfo> MOVIE_INFO_LIST;
     private final String TimeFormat="yyyy.MM.dd";
+    public static Long LastCommentId=null;
 
-    public WebCrawler(String url, Integer lastNumber, ArrayList<MovieInfo> movieInfoList){
+    public WebCrawler(String url, Integer lastNumber, ArrayList<MovieInfo> movieInfoList, Long lastCommentId){
         this.URL=url;
         this.LastNumber=lastNumber;
         this.MOVIE_INFO_LIST=movieInfoList;
+        this.LastCommentId=lastCommentId;
     }
 
     @Override
@@ -66,8 +70,6 @@ public class WebCrawler extends TimerTask {
                             comment=comment.substring(movieInfo.getTitle().length(),el.text().indexOf("신고"));
                             commentInfo.setTitile(movieInfo.getTitle());
                             commentInfo.setComment(comment);
-//                            System.out.println(movieInfo.getTitle()+" | "+comment);
-
                         }else{
                             continue;
                         }
@@ -83,15 +85,34 @@ public class WebCrawler extends TimerTask {
                     } catch (ParseException e) {
                         e.printStackTrace();
                     }
-                    commentInfoList.add(commentInfo);
+
+
+                    if((LastCommentId==null) || commentInfo.getId()>LastCommentId){
+                        commentInfoList.add(commentInfo);
+                    }
+
                     commentInfo=new CommentInfo();
                 }
 
                 i++;
             }
         }
+
+        if(commentInfoList.size()!=0){
+            LastCommentId=getLastCommentId(commentInfoList);
+        }
+        ObjectMapper mapper =new ObjectMapper();
+        try {
+            System.out.println(mapper.writeValueAsString(commentInfoList));
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
     }
 
+    public Long getLastCommentId(ArrayList<CommentInfo> commentInfoList){
+        Long lastCommentId=commentInfoList.get(0).getId();
+        return lastCommentId;
+    }
 
     public ArrayList<CommentInfo> webCrawlering(){
         Document doc=null;

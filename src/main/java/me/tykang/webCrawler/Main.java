@@ -13,6 +13,7 @@ import org.apache.commons.cli.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.apache.log4j.PropertyConfigurator;
+import static me.tykang.webCrawler.WebCrawler.LastCommentId;
 
 public class Main {
 
@@ -25,6 +26,7 @@ public class Main {
     private static final String LAST_PAGE_NUMBER="lastPageNumber";
     private static final Options OPTIONS = new Options();
     public static ArrayList<MovieInfo> MOVIE_INFO_LIST = null;
+    public static Long LastCommentId=null;
 
     public static void main(String[] args) {
 
@@ -64,14 +66,13 @@ public class Main {
         MOVIE_INFO_LIST=movieListCrawler.getMovieList();
 
 
-//        Timer timer = new Timer("Timer-thread", false);
-//        WebCrawler webCrawler=new WebCrawler(url, lastPageNum, MOVIE_INFO_LIST);
-//        timer.scheduleAtFixedRate(webCrawler,1000, 1000 * 60);
+        Timer timer = new Timer("Timer-thread", false);
+        WebCrawler webCrawler=new WebCrawler(url, lastPageNum, MOVIE_INFO_LIST, LastCommentId);
+        timer.scheduleAtFixedRate(webCrawler,1000, 1000 * 60);
 
-        WebCrawler webCrawler = new WebCrawler(url, lastPageNum, MOVIE_INFO_LIST);
-        ArrayList<CommentInfo> commentInfoList=webCrawler.webCrawlering();
+//        WebCrawler webCrawler = new WebCrawler(url, lastPageNum, MOVIE_INFO_LIST,LastCommentId);
+//        ArrayList<CommentInfo> commentInfoList=webCrawler.webCrawlering();
 
-        System.out.println(" ");
 
     }
 

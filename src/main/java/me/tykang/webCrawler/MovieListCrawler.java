@@ -55,6 +55,7 @@ public class MovieListCrawler {
             try {
                 releaseDate = dt.parse(sReleaseDate);
                 Date toDay = new Date();
+                //해당 월에 개봉한 영화만 조회가 됨, 재개봉 X
                 Date toDate = DateUtils.truncate(toDay, Calendar.DATE);
                 if(releaseDate.getMonth() < toDate.getMonth()){
                     continue;
