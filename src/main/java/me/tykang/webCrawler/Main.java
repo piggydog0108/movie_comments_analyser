@@ -46,7 +46,7 @@ public class Main {
         String url = commandLine.getOptionValue(URL);
         String movieListUrl = commandLine.getOptionValue(MOVIE_LIST_URL);
         String timeFormat = commandLine.getOptionValue(LOG_TIME_FORMAT);
-        String producerConfigPath = commandLine.getOptionValue(KAFKA_PRODUCER_CONF);
+        String producerConfigFilePath = commandLine.getOptionValue(KAFKA_PRODUCER_CONF);
         String logConfigPath = commandLine.getOptionValue(LOG_PATH);
         String lastPageNumber=commandLine.getOptionValue(LAST_PAGE_NUMBER);
 
@@ -67,7 +67,7 @@ public class Main {
 
 
         Timer timer = new Timer("Timer-thread", false);
-        WebCrawler webCrawler=new WebCrawler(url, lastPageNum, MOVIE_INFO_LIST, LastCommentId);
+        WebCrawler webCrawler=new WebCrawler(url, lastPageNum, MOVIE_INFO_LIST, LastCommentId, producerConfigFilePath);
         timer.scheduleAtFixedRate(webCrawler,1000, 1000 * 60);
 
 //        WebCrawler webCrawler = new WebCrawler(url, lastPageNum, MOVIE_INFO_LIST,LastCommentId);

@@ -1,21 +1,276 @@
-[16:53:16][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
-[16:53:58][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
-[16:54:08][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
-[16:57:30][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
-[16:58:19][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
-[17:23:36][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
-[17:23:47][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
-[17:24:26][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
-[17:25:09][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
-[17:26:00][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
-[17:26:28][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
-[17:30:11][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
-[17:30:19][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
-[17:30:58][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
-[17:31:10][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
-[17:31:29][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
-[17:31:43][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
-[17:32:21][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
-[17:32:54][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
-[17:46:23][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
-[17:57:30][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
+[10:19:45][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
+[10:19:46][INFO ](AbstractConfig.java:347)-ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = webCrawlering-producer
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+[10:19:46][INFO ](AppInfoParser.java:117)-Kafka version: 2.3.0
+[10:19:46][INFO ](AppInfoParser.java:118)-Kafka commitId: fc1aaa116b661c8a
+[10:19:46][INFO ](AppInfoParser.java:119)-Kafka startTimeMs: 1568769586318
+[10:19:46][INFO ](Metadata.java:266)-[Producer clientId=webCrawlering-producer] Cluster ID: Ugc_LEthRySp1bSHmbyO_A
+[10:23:20][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
+[10:23:21][INFO ](AbstractConfig.java:347)-ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = webCrawlering-producer
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[10:23:21][INFO ](AppInfoParser.java:117)-Kafka version: 2.3.0
+[10:23:21][INFO ](AppInfoParser.java:118)-Kafka commitId: fc1aaa116b661c8a
+[10:23:21][INFO ](AppInfoParser.java:119)-Kafka startTimeMs: 1568769801493
+[10:23:21][INFO ](Metadata.java:266)-[Producer clientId=webCrawlering-producer] Cluster ID: Ugc_LEthRySp1bSHmbyO_A
+[10:38:04][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
+[10:38:05][INFO ](AbstractConfig.java:347)-ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = webCrawlering-producer
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[10:38:05][INFO ](AppInfoParser.java:117)-Kafka version: 2.3.0
+[10:38:05][INFO ](AppInfoParser.java:118)-Kafka commitId: fc1aaa116b661c8a
+[10:38:05][INFO ](AppInfoParser.java:119)-Kafka startTimeMs: 1568770685300
+[10:38:05][INFO ](Metadata.java:266)-[Producer clientId=webCrawlering-producer] Cluster ID: Ugc_LEthRySp1bSHmbyO_A
+[10:40:26][DEBUG](Main.java:61)-/Users/tykang/Dev/git/webCrawler/src/main/resources/log4j.properties file configured.
+[10:40:27][INFO ](AbstractConfig.java:347)-ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = webCrawlering-producer
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[10:40:27][INFO ](AppInfoParser.java:117)-Kafka version: 2.3.0
+[10:40:27][INFO ](AppInfoParser.java:118)-Kafka commitId: fc1aaa116b661c8a
+[10:40:27][INFO ](AppInfoParser.java:119)-Kafka startTimeMs: 1568770827575
+[10:40:27][INFO ](Metadata.java:266)-[Producer clientId=webCrawlering-producer] Cluster ID: Ugc_LEthRySp1bSHmbyO_A

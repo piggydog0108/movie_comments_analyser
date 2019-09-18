@@ -5,6 +5,8 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import me.tykang.webCrawler.domain.CommentInfo;
 import me.tykang.webCrawler.domain.MovieInfo;
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerRecord;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -12,11 +14,14 @@ import org.jsoup.select.Elements;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Properties;
 import java.util.TimerTask;
 
 public class WebCrawler extends TimerTask {
@@ -26,13 +31,24 @@ public class WebCrawler extends TimerTask {
     private Integer LastNumber;
     private ArrayList<MovieInfo> MOVIE_INFO_LIST;
     private final String TimeFormat="yyyy.MM.dd";
-    public static Long LastCommentId=null;
 
-    public WebCrawler(String url, Integer lastNumber, ArrayList<MovieInfo> movieInfoList, Long lastCommentId){
+    public static Long LastCommentId=null;
+    private final KafkaProducer<String, String> KafkaProducer;
+
+
+    public WebCrawler(String url, Integer lastNumber, ArrayList<MovieInfo> movieInfoList, Long lastCommentId, String producerConfigFilePath){
         this.URL=url;
         this.LastNumber=lastNumber;
         this.MOVIE_INFO_LIST=movieInfoList;
         this.LastCommentId=lastCommentId;
+
+        Properties producerProperties=new Properties();
+        try (InputStream propStream = new FileInputStream(producerConfigFilePath)) {
+            producerProperties.load(propStream);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        this.KafkaProducer = new KafkaProducer<>(producerProperties);
     }
 
     @Override
@@ -85,8 +101,6 @@ public class WebCrawler extends TimerTask {
                     } catch (ParseException e) {
                         e.printStackTrace();
                     }
-
-
                     if((LastCommentId==null) || commentInfo.getId()>LastCommentId){
                         commentInfoList.add(commentInfo);
                     }
@@ -101,12 +115,18 @@ public class WebCrawler extends TimerTask {
         if(commentInfoList.size()!=0){
             LastCommentId=getLastCommentId(commentInfoList);
         }
+
         ObjectMapper mapper =new ObjectMapper();
+        String commentData=null;
         try {
-            System.out.println(mapper.writeValueAsString(commentInfoList));
+            commentData=mapper.writeValueAsString(commentInfoList);
+//            KafkaProducer.send(new ProducerRecord<String, String>("test-topic",commentData));
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
+
+
+
     }
 
     public Long getLastCommentId(ArrayList<CommentInfo> commentInfoList){
@@ -149,7 +169,6 @@ public class WebCrawler extends TimerTask {
                             commentInfo.setTitile(movieInfo.getTitle());
                             commentInfo.setComment(comment);
 //                            System.out.println(movieInfo.getTitle()+" | "+comment);
-
                         }else{
                             continue;
                         }
