@@ -6,11 +6,11 @@ public class CommentInfo {
 
     private Long id;
     private Double score;
-    private String commentWithTitle;
+
     private String titile;
     private String comment;
     private String writer;
-    private Date commentDate;
+    private Long commentDate;
 
     public Long getId() {
         return id;
@@ -26,14 +26,6 @@ public class CommentInfo {
 
     public void setScore(Double score) {
         this.score = score;
-    }
-
-    public String getCommentWithTitle() {
-        return commentWithTitle;
-    }
-
-    public void setCommentWithTitle(String commentWithTitle) {
-        this.commentWithTitle = commentWithTitle;
     }
 
     public String getTitile() {
@@ -60,11 +52,11 @@ public class CommentInfo {
         this.writer = writer;
     }
 
-    public Date getCommentDate() {
+    public Long getCommentDate() {
         return commentDate;
     }
 
-    public void setCommentDate(Date commentDate) {
+    public void setCommentDate(Long commentDate) {
         this.commentDate = commentDate;
     }
 }

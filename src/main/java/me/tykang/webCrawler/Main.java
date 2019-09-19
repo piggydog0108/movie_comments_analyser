@@ -66,12 +66,12 @@ public class Main {
         MOVIE_INFO_LIST=movieListCrawler.getMovieList();
 
 
-        Timer timer = new Timer("Timer-thread", false);
-        WebCrawler webCrawler=new WebCrawler(url, lastPageNum, MOVIE_INFO_LIST, LastCommentId, producerConfigFilePath);
-        timer.scheduleAtFixedRate(webCrawler,1000, 1000 * 60);
+//        Timer timer = new Timer("Timer-thread", false);
+//        WebCrawler webCrawler=new WebCrawler(url, lastPageNum, MOVIE_INFO_LIST, LastCommentId, producerConfigFilePath);
+//        timer.scheduleAtFixedRate(webCrawler,1000, 1000 * 60);
 
-//        WebCrawler webCrawler = new WebCrawler(url, lastPageNum, MOVIE_INFO_LIST,LastCommentId);
-//        ArrayList<CommentInfo> commentInfoList=webCrawler.webCrawlering();
+        WebCrawler webCrawler = new WebCrawler(url, lastPageNum, MOVIE_INFO_LIST,LastCommentId, producerConfigFilePath);
+        ArrayList<ArrayList<String>> commentInfoList=webCrawler.webCrawlering();
 
 
     }
